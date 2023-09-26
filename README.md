@@ -1,64 +1,40 @@
-# 建北電資社網 [CKEFGISC.github.io](https://ckefgisc.github.io/)
+# 建北電資社網
+
+[ckefgisc.org](https://ckefgisc.org/) / [28th.ckefgisc.org](https://28th.ckefgisc.org/)
+
+Made by 建北電資 28th 社網製作團隊
+
+---
 
 ## 緣起
-建北電資以往皆有架設網站作為招生及宣傳用途。但是自從建電社辦的伺服器被學校沒收之後，一直以來都找不到一個良好的網站架設環境，也沒有一個地方讓學術們統一放置教材供學弟妹使用。因此，在一三接幹了之後，一二學術長檸檬便一直希望繼任的鹽亞倫可以將他們沒有做出的社網完成。因此，鹽亞倫便找了溫室菜以及北資學術長嗯嗯，嘗試從頭寫出一個網站，並且透過Github Pages進行架設。
+
+建北電資以往皆有架設網站作為招生及宣傳用途。但是自從建電社辦的伺服器被學校沒收之後，一直以來都找不到一個良好的網站架設環境，也沒有一個地方讓學術們統一放置教材供學弟妹使用
+
+因此，在一三接幹了之後，一二學術長檸檬便一直希望繼任的鹽亞倫可以將他們沒有做出的社網完成。因此，鹽亞倫便找了溫室菜以及北資學術長嗯嗯，嘗試從頭寫出一個網站，並且透過 Github Pages 進行架設
+
+接著一三也退休了，一四的幹部上任，晴以為自己很厲害，於是想再從頭寫社網。不過他後來便發現這是一個很笨的決定，因為寫一個完整的網頁，又沒有後端，實在太難了。於是他便一直耽擱著沒有去寫社網，即使一四社長水獺 & 網管六哥每天都說：「去寫社網！！！」
+
+直到某一天，晴發現有一個好用東西叫做 React，甚至是 Meta 公司開發的。它的架構良好，很多東西可以做成模版，甚至還有優化，實在是太讚了。花了一整天學完 React 的基本操作以後，把原本社網的東西搬過來補一補，就是現在社網的樣子啦！
 
 ## 製作團隊
+### 第28屆（一四）
+專案管理：建電一四 學術 & 網管 · 晴 [@LilyKensa](https://www.github.com/LilyKensa)  
+網頁設計：建電一四 網管 · 六哥 *[@Unknown]()*
+
+### 第27屆（一三）
 專案管理：建電一三學術長 吳亞倫 [@AaronWu-train](https://www.github.com/AaronWu-train) <br>
 網頁架設：北資一三學術長 蘇怡恩 [@gracesu307](https://www.github.com/gracesu307)   <br>
 　　　　　建電一三學術　 溫室蔡 [@VerstandTsai](https://github.com/VerstandTsai)  <br>
 
-## 編輯規則
-* commit message請使用有意義文句
-* 請遵守git flow, 詳請看此[文章](https://ithelp.ithome.com.tw/articles/10227605)
-* 要修改時請fork develop branch 到自己帳號，除了建立架構之外，不可直接commit到main
-* pull request 請寫有意義文句
+---
 
-## 檔案結構
-`styles`下面有header跟footer的CSS，<br>
-以及全體共用的`global.css`<br>
+## 給開發者
 
-`common`下面有header、footer以及共用的CSS links，<br>
-CSS links除了有styles裡面需要共用的CSS，<br>
-還有外部的CSS，包括字體跟Font Awesome等<br>
+請參考 `docs/` 
 
-`scripts`下面的`include.js`用來把`common`裡面的HTML都加進頁面裡，<br>
-因為用了jQuery，所以要用時請在`<head>`裡面加上這兩行：
-```html
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script src="/scripts/include.js"></script>
-```
-並將`<body>`如下安排：
-```html
-<body>
-  <header></header>
-  <div id="main-container">
-    <!--你自己的code-->
-  </div>
-  <footer></footer>
-</body>
+## 傳承
 
-```
-
-## 公告系統
-以`.txt`檔撰寫公告，存放於`/news/posts`底下
-### 檔案格式
-第一行為日期`YYYY-MM-DD` <br>
-第二行為標題 <br>
-第三行及以下為公告內容 <br>
-範例如下：
-```
-2022-12-25
-[測試]公告系統測試
-本公告乃為測試公告系統是否正常運作
-以及提供做為演示用途的範例
-```
-### HTML生成
-使用`gennews.sh`來生成 HTML 網頁：
-```
-./gennews.sh test
-```
-注意參數僅為其「檔名」，而不包含完整路徑或副檔名
+請參考[傳承文件](https://hackmd.io/@ckefgisc-28th/club-website)
 
 ## 關於
 Copyright © 2023 CKEFGISC 建北電資<br>
