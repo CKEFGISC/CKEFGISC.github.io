@@ -1,1 +1,0 @@
-請使用detail_slides_click作為主要的模板
