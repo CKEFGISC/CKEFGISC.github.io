@@ -1,3 +1,3 @@
 ---
-redirect_to: https://30th.ckefgisc.org
+redirect_to: https://www.ckefgisc.org
 ---
